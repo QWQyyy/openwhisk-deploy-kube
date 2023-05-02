@@ -1,0 +1,47 @@
+whisk:
+  runtimes: "runtimes1.json"
+  ingress:
+    type: NodePort
+    apiHostName: 192.168.1.21
+    apiHostPort: 31001
+  limits:
+    actions:
+      time:
+        # 函数最短执行时间
+        min: "100ms"
+        # 函数最长执行时间
+        max: "5m"
+        # 函数默认执行时间
+        std: "1m"
+      memory:
+        # 可配置最小内存使用
+        min: "128m"
+        # 可配置最大内存使用
+        max: "4096m"
+        # 默认内存使用
+        std: "256m"
+      concurrency:
+        min: 1
+        max: 2000
+        std: 50
+      log:
+        min: "0m"
+        max: "10m"
+        std: "10m"
+    activation:
+      payload:
+        max: "1048576"
+  # 负载均衡值
+  loadbalancer:
+    blackboxFraction: "100%"
+  # 容器池大小
+  containerPool:
+    userMemory: "16384m"
+nginx:
+  httpsNodePort: 31001
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+k8s:
+  persistence:
+    explicitStorageClass: openwhisk-nfs
