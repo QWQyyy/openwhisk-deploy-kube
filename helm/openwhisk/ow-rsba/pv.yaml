@@ -1,0 +1,239 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-01
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/01"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-02
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/02"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-03
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/03"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-04
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/04"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-05
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/05"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-06
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/06"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-07
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/07"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-10
+spec:
+  capacity:
+    storage: 30Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/10"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-11
+spec:
+  capacity:
+    storage: 30Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/11"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-12
+spec:
+  capacity:
+    storage: 30Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/12"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-13
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/13"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-14
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/14"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-15
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/15"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-16
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/16"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: openwhisk-nfs-17
+spec:
+  capacity:
+    storage: 30Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: openwhisk-nfs
+  nfs:
+    server: 192.168.1.23
+    path: "/nfs/openwhisk/17"
