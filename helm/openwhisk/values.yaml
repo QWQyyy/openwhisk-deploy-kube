@@ -69,10 +69,10 @@ whisk:
     guest: "23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP"
   systemNameSpace: "/whisk.system"
   limits:
-    actionsInvokesPerminute: 60
-    actionsInvokesConcurrent: 30
-    triggersFiresPerminute: 60
-    actionsSequenceMaxlength: 50
+    actionsInvokesPerminute: "50000000"
+    actionsInvokesConcurrent: "50000000"
+    triggersFiresPerminute: "50000000"
+    actionsSequenceMaxlength: "50000000"
     actions:
       time:
         min: "100ms"
@@ -80,12 +80,12 @@ whisk:
         std: "1m"
       memory:
         min: "128m"
-        max: "512m"
+        max: "4096m"
         std: "256m"
       concurrency:
         min: 1
-        max: 1
-        std: 1
+        max: 2000
+        std: 50
       log:
         min: "0m"
         max: "10m"
@@ -94,7 +94,7 @@ whisk:
       payload:
         max: "1048576"
   loadbalancer:
-    blackboxFraction: "10%"
+    blackboxFraction: "100%"
     timeoutFactor: 2
   # Kafka configuration. For all sub-fields a value of "" means use the default from application.conf
   kafka:
@@ -262,11 +262,11 @@ controller:
   imageName: "openwhisk/controller"
   imageTag: "ef725a6"
   imagePullPolicy: "IfNotPresent"
-  replicaCount: 1
+  replicaCount: 2
   restartPolicy: "Always"
   port: 8080
   options: ""
-  jvmHeapMB: "1024"
+  jvmHeapMB: "2048"
   jvmOptions: ""
   loglevel: "INFO"
 
