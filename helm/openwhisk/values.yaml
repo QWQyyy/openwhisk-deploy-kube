@@ -69,10 +69,10 @@ whisk:
     guest: "23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP"
   systemNameSpace: "/whisk.system"
   limits:
-    actionsInvokesPerminute: 60
-    actionsInvokesConcurrent: 30
-    triggersFiresPerminute: 60
-    actionsSequenceMaxlength: 50
+    actionsInvokesPerminute: "60"
+    actionsInvokesConcurrent: "60"
+    triggersFiresPerminute: "60"
+    actionsSequenceMaxlength: "60"
     actions:
       time:
         min: "100ms"
